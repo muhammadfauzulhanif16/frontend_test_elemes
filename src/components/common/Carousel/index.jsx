@@ -19,7 +19,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-10">
       <div className="carousel" ref={carousel}>
         {CategoryFoodList.map(({ image, name, bgColor, items }, id) => {
           return (
