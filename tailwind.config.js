@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      outline: {
+        "solid-black": ["1px solid #000"],
+        "lime-8bac3e": ["1px solid #8bac3e"],
+      },
       padding: {
         3.875: "3.875rem",
       },
