@@ -3,10 +3,13 @@
 This is a test to follow up the job application selection process
  - Repo: https://github.com/muhammadfauzulhanif16/frontend_test_elemes
  - Web
-   - Heroku https://fauzul-fe-test-elemes-241121.herokuapp.com/  
-     **note: (for Heroku, it has been successfully deployed but the application error)
-   - Netlify https://fauzul-fe-test-elemes-241121.netlify.app/    
-     **note: (as an alternative to preview the web, I provided the one from Netlify)
+   - Heroku https://fauzul-fe-test-elemes-241121.herokuapp.com/
+   - Netlify https://fauzul-fe-test-elemes-241121.netlify.app/
+     
+
+     note:
+      *for Heroku already deployed, but the application error
+      **as an alternative to preview the web, I provided the one from Netlify
    
 
 
