@@ -11,6 +11,7 @@ export const Button = ({
   children,
   isPrimary,
   onClick,
+  isIconTop,
 }) => {
   return (
     <div
@@ -20,9 +21,10 @@ export const Button = ({
       }`}
     >
       {isText ? (
-        <span className="flex items-center">
+        <span className={`${isIconTop ? "flex-col" : ""} flex items-center`}>
           {isIconLeft ? <>{children}</> : ""}
 
+          {isIconTop ? <>{children}</> : ""}
           {text}
 
           {isHot ? (
