@@ -1,13 +1,15 @@
 import React from "react";
-import ElemesLogo from "../../images/Elemes Indonesia.svg";
 import { NavList } from "./NavList";
 import { CTAList } from "./CTAList";
 import { Button } from "../common/Button";
+import { Logo } from "../common/Logo";
 
 export const NavBar = () => {
   return (
     <div className="mx-28 h-24 flex items-center justify-between">
-      <Button isIcon={true} icon={ElemesLogo} />
+      <Button isIcon={true}>
+        <Logo />
+      </Button>
 
       <div className="flex">
         {NavList.map(({ title, isHot }, id) => {

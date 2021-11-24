@@ -3,6 +3,7 @@ import { Card } from "../common/Card";
 import { Button } from "../common/Button";
 import ElemesLogo from "../../images/Elemes Indonesia.svg";
 import { RiMailLine, RiPhoneLine, RiInstagramLine } from "react-icons/ri";
+import { Logo } from "../common/Logo";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,9 @@ export const Footer = () => {
       <Card cardClass="rounded-1.25 px-3.875 py-20 bg-white-f9eef3 w-full h-full">
         <div className="flex">
           <div className="flex-1">
-            <Button isIcon={true} icon={ElemesLogo} className="mb-5" />
+            <Button isIcon={true}>
+              <Logo />
+            </Button>
 
             <p className="text-sm">
               Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan,Kecamatan
