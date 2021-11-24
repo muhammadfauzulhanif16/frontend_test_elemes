@@ -12,6 +12,7 @@ export const Button = ({
   children,
   isPrimary,
   onClick,
+  icon,
 }) => {
   return (
     <div
@@ -45,7 +46,6 @@ export const Button = ({
           )}
         </span>
       ) : isIcon ? (
-        // <img src={icon} alt="" />
         <>{children}</>
       ) : (
         ""
