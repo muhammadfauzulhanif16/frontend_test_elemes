@@ -35,34 +35,4 @@ export const CategoryFoodList = [
     items: 4,
     bgColor: "bg-white-f0feeb",
   },
-  {
-    image: `${Cupcake}`,
-    name: "Cupcake",
-    items: 4,
-    bgColor: "bg-aqua-e6f3f5",
-  },
-  {
-    image: `${Pizza}`,
-    name: "Pizza",
-    items: 3,
-    bgColor: "bg-aqua-e6f3f5",
-  },
-  {
-    image: `${Kebab}`,
-    name: "Kebab",
-    items: 5,
-    bgColor: "bg-white-eaeefa",
-  },
-  {
-    image: `${Salmon}`,
-    name: "Salmon",
-    items: 4,
-    bgColor: "bg-white-f9eef3",
-  },
-  {
-    image: `${Doughnut}`,
-    name: "Doughnut",
-    items: 4,
-    bgColor: "bg-white-f0feeb",
-  },
 ];
