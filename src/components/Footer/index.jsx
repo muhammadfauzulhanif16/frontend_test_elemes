@@ -112,7 +112,7 @@ export const Footer = () => {
               <div className="mt-4">
                 <Button
                   isIconLeft={true}
-                  className="w-10 h-10 flex items-center"
+                  className="w-full h-10 flex items-center"
                   text="elemesid@gmail.com"
                   isText={true}
                 >
@@ -121,8 +121,8 @@ export const Footer = () => {
 
                 <Button
                   isIconLeft={true}
-                  className="w-10 h-10 flex items-center flex"
-                  text="088811112222"
+                  className="w-full h-10 flex items-center flex"
+                  text="0888 1111 2222"
                   isText={true}
                 >
                   <RiPhoneLine className="mr-2 text-lime-8bac3e" />
