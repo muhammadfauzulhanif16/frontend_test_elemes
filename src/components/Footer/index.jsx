@@ -1,17 +1,17 @@
 import React from "react";
 import { Card } from "../common/Card";
 import { Button } from "../common/Button";
-import ElemesLogo from "../../images/Elemes Indonesia.svg";
 import { RiMailLine, RiPhoneLine, RiInstagramLine } from "react-icons/ri";
 import { Logo } from "../common/Logo";
+import { CategoryFoodList } from "../Food/Category/CategoryFoodList";
 
 export const Footer = () => {
   return (
     <div className="px-28 pt-48">
-      <Card cardClass="rounded-1.25 px-3.875 py-20 bg-white-f9eef3 w-full h-full">
+      <Card cardClass="bg-white-f9fff6 rounded-1.25 px-3.875 py-20 bg-white-f9eef3 w-full h-full">
         <div className="flex">
           <div className="flex-1">
-            <Button isIcon={true}>
+            <Button isIcon={true} className="mb-5">
               <Logo />
             </Button>
 
@@ -42,9 +42,36 @@ export const Footer = () => {
               </Button>
             </div>
           </div>
-          <div className="flex-1">2</div>
-          <div className="flex-1">3</div>
-          <div className="flex-1">4</div>
+
+          <div className="flex-1 bg-red-100">
+            <Card
+              isText={true}
+              title="Categories"
+              cardClass="flex justify-center"
+            >
+              {CategoryFoodList.map(({ name }) => {
+                return <Button isText={true} title={name} />;
+              })}
+            </Card>
+          </div>
+          <div className="flex-1 bg-red-200">
+            <Card
+              isText={true}
+              title="About Us"
+              cardClass="flex justify-center"
+            >
+              <Button />
+            </Card>
+          </div>
+          <div className="flex-1 bg-red-300">
+            <Card
+              isText={true}
+              title="Newsletter"
+              cardClass="flex justify-center"
+            >
+              <Button />
+            </Card>
+          </div>
         </div>
       </Card>
     </div>
