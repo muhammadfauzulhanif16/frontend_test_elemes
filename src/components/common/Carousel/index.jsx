@@ -3,6 +3,7 @@ import { CategoryFoodList } from "../../Food/Category/CategoryFoodList";
 import "./style.css";
 import { Card } from "../Card";
 import { Button } from "../Button";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 export const Carousel = () => {
   const carousel = useRef(null);
@@ -28,7 +29,7 @@ export const Carousel = () => {
               isCategory={true}
               iconFood={image}
               imageClass="w-12 mb-6"
-              cardClass={`${bgColor}  item w-56 flex-none rounded-lg mr-2 flex items-center justify-center p-8`}
+              cardClass={`${bgColor} cursor-pointer item w-56 flex-none rounded-lg mr-2 flex items-center justify-center p-8`}
               foodName={name}
               amountFood={items}
               foodNameClass="text-base"
@@ -45,7 +46,9 @@ export const Carousel = () => {
           isIconLeft={true}
           onClick={handleLeftClick}
           className="bg-lime-8bac3e rounded-full text-base text-white mr-2 p-2"
-        />
+        >
+          <RiArrowLeftSLine className="mr-2 h-6 w-6 bg-white rounded-full text-lime-8bac3e" />
+        </Button>
 
         <Button
           isText={true}
@@ -53,7 +56,9 @@ export const Carousel = () => {
           isIconRight={true}
           onClick={handleRightClick}
           className="bg-lime-8bac3e rounded-full text-base text-white ml-2 p-2"
-        />
+        >
+          <RiArrowRightSLine className="ml-2 h-6 w-6 bg-white rounded-full text-lime-8bac3e" />
+        </Button>
       </div>
     </div>
   );

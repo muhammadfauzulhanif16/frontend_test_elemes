@@ -22,7 +22,7 @@ export const Trending = () => {
                 foodName={name}
                 foodCategory={category}
                 starValue={rate}
-                cardClass={`${bgColor} p-6 rounded-2xl font-medium shadow-second`}
+                cardClass={`${bgColor} cursor-pointer p-6 rounded-2xl font-medium shadow-second`}
                 foodNameClass="text-xl mt-4"
                 foodCategoryClass="text-lg text-lime-8bac3e mb-2"
                 imageClass="rounded-md"

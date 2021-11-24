@@ -1,5 +1,4 @@
 import React from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
 export const Button = ({
   className,
@@ -16,17 +15,13 @@ export const Button = ({
   return (
     <div
       onClick={onClick}
-      className={`${className} ${
+      className={`${className} cursor-pointer ${
         isPrimary ? "bg-lime-8bac3e text-white rounded-full" : ""
       }`}
     >
       {isText ? (
         <span className="flex items-center">
-          {isIconLeft ? (
-            <ChevronLeftIcon className="mr-2 h-6 w-6 bg-white rounded-full text-lime-8bac3e" />
-          ) : (
-            ""
-          )}
+          {isIconLeft ? <>{children}</> : ""}
 
           {text}
 
@@ -38,11 +33,7 @@ export const Button = ({
             ""
           )}
 
-          {isIconRight ? (
-            <ChevronRightIcon className="ml-2 h-6 w-6 bg-white rounded-full text-lime-8bac3e" />
-          ) : (
-            ""
-          )}
+          {isIconRight ? <>{children}</> : ""}
         </span>
       ) : isIcon ? (
         <>{children}</>
