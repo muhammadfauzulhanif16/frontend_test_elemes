@@ -25,19 +25,19 @@ export const Footer = () => {
             <div className="flex mt-8">
               <Button
                 isIcon={true}
-                className="w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
+                className="text-base w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
               >
                 <RiMailLine />
               </Button>
               <Button
                 isIcon={true}
-                className="w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
+                className="text-base w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
               >
                 <RiPhoneLine />
               </Button>
               <Button
                 isIcon={true}
-                className="w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
+                className="text-base w-10 h-10 flex items-center justify-center bg-white mr-1 rounded-full hover:bg-lime-8bac3e hover:text-white text-lime-8bac3e"
               >
                 <RiInstagramLine />
               </Button>
@@ -51,12 +51,13 @@ export const Footer = () => {
               cardClass="flex align-center flex-col"
             >
               <div className="mt-8">
-                {CategoryFoodList.map(({ name }) => {
+                {CategoryFoodList.map(({ name }, id) => {
                   return (
                     <Button
+                      key={id}
                       isText={true}
                       text={name}
-                      className="text-gray-757575"
+                      className="text-gray-757575 mb-4"
                     />
                   );
                 })}
@@ -71,12 +72,13 @@ export const Footer = () => {
               cardClass="flex align-center flex-col"
             >
               <div className="mt-8">
-                {AboutList.map((name) => {
+                {AboutList.map((name, id) => {
                   return (
                     <Button
+                      key={id}
                       isText={true}
                       text={name}
-                      className="text-gray-757575"
+                      className="text-gray-757575 mb-4"
                     />
                   );
                 })}
@@ -102,9 +104,24 @@ export const Footer = () => {
                   className="p-2 flex-1 w-full rounded-none text-black rounded-l-md outline-solid-black"
                   placeholder="Your email address"
                 />
-                <span className="p-2 inline-flex items-center px-3 rounded-r-md bg-gray-50 text-white text-sm font-medium bg-lime-8bac3e outline-lime-8bac3e">
+                <span className="cursor-pointer p-2 inline-flex items-center px-3 rounded-r-md bg-gray-50 text-white text-sm font-medium bg-lime-8bac3e outline-lime-8bac3e">
                   SEND
                 </span>
+              </div>
+
+              <div>
+                <Button
+                  isIcon={true}
+                  className="w-10 h-10 flex items-center text-base text-lime-8bac3e"
+                >
+                  <RiMailLine />
+                </Button>
+                <Button
+                  isIcon={true}
+                  className="w-10 h-10 flex items-center text-base text-lime-8bac3e"
+                >
+                  <RiPhoneLine />
+                </Button>
               </div>
             </Card>
           </div>
