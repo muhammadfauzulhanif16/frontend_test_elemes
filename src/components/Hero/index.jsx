@@ -5,11 +5,47 @@ import { Card } from "../common/Card";
 
 export const Hero = () => {
   return (
-    <div className="flex mx-28">
+    <div className="flex xl:mx-28 lg:mx-10 md:mx-8 mx-4">
       <div className="flex-1 flex justify-center flex-col pr-8">
-        <h1 className="text-primary text-6xl font-medium">
+        <h1 className="text-primary text-6xl font-medium text-lime-8bac3e w-full sm:w-2/3 md:w-full">
           Good Food Us Good Mood
         </h1>
+
+        <div className="hidden">
+          <div className="p-12 rounded-full bg-food-transparant">
+            <img src={GreenSaladTomato} alt="Green Salad Tomato" />
+
+            <Card
+              isTrending={true}
+              foodImage={GreenSaladTomato}
+              foodName="Green Salad Tomato"
+              foodNameClass="font-semibold leading-none"
+              foodCategory="Tomato"
+              cardClass="p-6 absolute flex transform translate-x-1/2 -translate-y-1/2"
+              imageClass="mr-6 w-14"
+              foodCategoryClass="text-gray-757575 font-normal text-xs leading-loose"
+              starValue={4}
+            />
+          </div>
+        </div>
+
+        <div className="md:hidden">
+          <div className="p-12 rounded-full bg-food-transparant">
+            <img src={GreenSaladTomato} alt="Green Salad Tomato" />
+
+            <Card
+              isTrending={true}
+              foodImage={GreenSaladTomato}
+              foodName="Green Salad Tomato"
+              foodNameClass="font-semibold leading-none"
+              foodCategory="Tomato"
+              cardClass="p-6 absolute flex transform translate-x-1/2 -translate-y-1/2 trending-food-card"
+              imageClass="mr-6 w-14"
+              foodCategoryClass="text-gray-757575 font-normal text-xs leading-loose"
+              starValue={4}
+            />
+          </div>
+        </div>
 
         <p className="py-8 text-lg">
           I would think that conserving our natural resources should be a
@@ -33,7 +69,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="flex-1 ">
+      <div className="hidden md:flex flex-1">
         <div className="p-12 rounded-full bg-food-transparant">
           <img src={GreenSaladTomato} alt="Green Salad Tomato" />
 

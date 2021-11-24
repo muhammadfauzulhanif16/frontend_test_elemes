@@ -8,9 +8,9 @@ import { AboutList } from "./AboutList";
 
 export const Footer = () => {
   return (
-    <div className="px-28 pt-48">
+    <div className="pt-48 xl:px-28 lg:px-10 md:px-8 px-4">
       <Card cardClass="bg-white-f9fff6 rounded-1.25 px-3.875 py-20 bg-white-f9eef3 w-full h-full">
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           <div className="flex-col">
             <Button isIcon={true} className="mb-5">
               <Logo />
@@ -44,7 +44,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="pl-16">
+          <div className="lg:pl-20 mt-8">
             <Card
               isText={true}
               title="Categories"
@@ -65,7 +65,7 @@ export const Footer = () => {
             </Card>
           </div>
 
-          <div className="pl-16">
+          <div className="lg:pl-6 mt-8">
             <Card
               isText={true}
               title="About Us"
@@ -86,7 +86,7 @@ export const Footer = () => {
             </Card>
           </div>
 
-          <div>
+          <div className=" mt-8">
             <Card
               isText={true}
               title="Newsletter"
@@ -109,18 +109,23 @@ export const Footer = () => {
                 </span>
               </div>
 
-              <div>
+              <div className="mt-4">
                 <Button
-                  isIcon={true}
-                  className="w-10 h-10 flex items-center text-base text-lime-8bac3e"
+                  isIconLeft={true}
+                  className="w-10 h-10 flex items-center"
+                  text="elemesid@gmail.com"
+                  isText={true}
                 >
-                  <RiMailLine />
+                  <RiMailLine className="mr-2 text-lime-8bac3e" />
                 </Button>
+
                 <Button
-                  isIcon={true}
-                  className="w-10 h-10 flex items-center text-base text-lime-8bac3e"
+                  isIconLeft={true}
+                  className="w-10 h-10 flex items-center flex"
+                  text="088811112222"
+                  isText={true}
                 >
-                  <RiPhoneLine />
+                  <RiPhoneLine className="mr-2 text-lime-8bac3e" />
                 </Button>
               </div>
             </Card>

@@ -6,7 +6,7 @@ export const Category = () => {
   return (
     <Card
       isText={true}
-      cardClass="py-12 pl-28 text-4xl font-medium "
+      cardClass="py-12 xl:pl-28 lg:pl-10 md:pl-8 pl-4 text-4xl font-medium "
       title="Browse Our Category"
       info="Receipt"
     >

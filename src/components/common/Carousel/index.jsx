@@ -39,7 +39,7 @@ export const Carousel = () => {
         })}
       </div>
 
-      <div className="justify-end flex mt-12 mr-28">
+      <div className="justify-end hidden sm:flex mt-12 xl:mr-28 lg:mr-10 md:mr-8 mr-4">
         <Button
           isText={true}
           text="Prev"

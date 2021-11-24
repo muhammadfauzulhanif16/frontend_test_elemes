@@ -7,11 +7,11 @@ export const Trending = () => {
   return (
     <Card
       isText={true}
-      cardClass="py-12 px-28 text-4xl font-medium"
+      cardClass="xl:mx-28 lg:mx-10 md:mx-8 mx-4 py-12 text-4xl font-medium"
       title="Browse Our Trending"
       info="Receipt"
     >
-      <div className="grid grid-cols-4 gap-4 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
         {TrendingFoodList.map(
           ({ image, name, category, rate, bgColor }, id) => {
             return (
