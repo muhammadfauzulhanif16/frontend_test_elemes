@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { CategoryFoodList } from "../../Food/Category/CategoryFoodList";
-import "./style.css";
+import "./style.scss";
 import { Card } from "../Card";
 import { Button } from "../Button";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
@@ -21,7 +21,7 @@ export const Carousel = () => {
 
   return (
     <div className="container mt-10">
-      <div className="pb-10">
+      <>
         <div className="carousel" ref={carousel}>
           {CategoryFoodList.map(({ image, name, bgColor, items }, id) => {
             return (
@@ -39,9 +39,9 @@ export const Carousel = () => {
             );
           })}
         </div>
-      </div>
+      </>
 
-      <div className="justify-end hidden sm:flex mt-12 xl:mr-28 lg:mr-10 md:mr-8 mr-4">
+      <div className="justify-end hidden sm:flex xl:mr-28 lg:mr-10 md:mr-8 mr-4">
         <Button
           isText={true}
           text="Prev"
