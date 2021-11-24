@@ -12,7 +12,6 @@ export const Button = ({
   children,
   isPrimary,
   onClick,
-  icon,
 }) => {
   return (
     <div
