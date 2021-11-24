@@ -36,7 +36,6 @@ body {
 }
 
 .shadow-second:hover {
-  /*transition: all 2s ease-in-out;*/
   background-image: url("./images/Foods Transparant Small.svg");
 }
 
@@ -44,8 +43,8 @@ body {
   box-shadow: 0 11px 39px rgba(0, 0, 0, 0.07);
   backdrop-filter: blur(11px);
   border-radius: 17px;
-  bottom: -2.5rem;
-  right: 34.3rem;
+  /*bottom: -2.5rem;*/
+  /*right: 34.3rem;*/
 }
 
 ::placeholder {

@@ -21,22 +21,24 @@ export const Carousel = () => {
 
   return (
     <div className="container mt-10">
-      <div className="carousel" ref={carousel}>
-        {CategoryFoodList.map(({ image, name, bgColor, items }, id) => {
-          return (
-            <Card
-              key={id}
-              isCategory={true}
-              iconFood={image}
-              imageClass="w-12 mb-6"
-              cardClass={`${bgColor} cursor-pointer item w-56 flex-none rounded-lg mr-2 flex items-center justify-center p-8`}
-              foodName={name}
-              amountFood={items}
-              foodNameClass="text-base"
-              foodCategoryClass="text-sm"
-            />
-          );
-        })}
+      <div className="pb-10">
+        <div className="carousel" ref={carousel}>
+          {CategoryFoodList.map(({ image, name, bgColor, items }, id) => {
+            return (
+              <Card
+                key={id}
+                isCategory={true}
+                iconFood={image}
+                imageClass="w-12 mb-6"
+                cardClass={`${bgColor} cursor-pointer item w-56 flex-none rounded-lg mr-2 flex items-center justify-center p-8`}
+                foodName={name}
+                amountFood={items}
+                foodNameClass="text-base"
+                foodCategoryClass="text-sm"
+              />
+            );
+          })}
+        </div>
       </div>
 
       <div className="justify-end hidden sm:flex mt-12 xl:mr-28 lg:mr-10 md:mr-8 mr-4">
