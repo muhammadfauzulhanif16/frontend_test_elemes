@@ -22,10 +22,10 @@ export const Card = ({
   return (
     <div className={cardClass}>
       {isText ? (
-        <div className="mb-12">
-          <p>{title}</p>
+        <>
+          <p className="font-medium">{title}</p>
           <p className="text-lime-8bac3e">{info}</p>
-        </div>
+        </>
       ) : (
         ""
       )}
