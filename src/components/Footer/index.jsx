@@ -11,7 +11,7 @@ export const Footer = () => {
     <div className="px-28 pt-48">
       <Card cardClass="bg-white-f9fff6 rounded-1.25 px-3.875 py-20 bg-white-f9eef3 w-full h-full">
         <div className="grid grid-cols-4">
-          <>
+          <div className="flex-col">
             <Button isIcon={true} className="mb-5">
               <Logo />
             </Button>
@@ -42,7 +42,7 @@ export const Footer = () => {
                 <RiInstagramLine />
               </Button>
             </div>
-          </>
+          </div>
 
           <div className="pl-16">
             <Card
