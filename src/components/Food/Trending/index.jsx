@@ -11,7 +11,7 @@ export const Trending = () => {
       title="Browse Our Trending"
       info="Receipt"
     >
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 mt-10">
         {TrendingFoodList.map(
           ({ image, name, category, rate, bgColor }, id) => {
             return (
